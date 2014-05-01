@@ -2,7 +2,15 @@
 ==========
 speedClick is a windows utility that can be configured to add efficiency and ease to mouse movements. 
 
-**Instructions**
+**Development Instructions**
+==========
+Microsoft Visual Basic Power Packs must be installed 
+http://www.microsoft.com/en-us/download/details.aspx?id=25169
+
+If there is a signing error you may need to: 
+Uncheck Properties->signing->Sign the clickonce manifests
+
+**Application Instructions**
 ==========
 When speedClick is run, the screen should start in 'reset mode', a dimmed state where the user can add points. Right-clicking adds points that will click when activated, and Left-clicking will add points that will simply be traveled to. 
 Pressing the 'activate key' will exit 'reset mode' when the user is finished. 
