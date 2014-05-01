@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ActionForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,14 +23,14 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ActionForm))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.NotifyIconStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Reset = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Quit = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Quit = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotifyIconStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,52 +47,52 @@ Partial Class Form1
         '
         Me.NotifyIconStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Reset, Me.SaveToolStripMenuItem, Me.LoadToolStripMenuItem, Me.SettingsToolStripMenuItem, Me.Quit})
         Me.NotifyIconStrip.Name = "NotifyIconStrip"
-        Me.NotifyIconStrip.Size = New System.Drawing.Size(153, 136)
+        Me.NotifyIconStrip.Size = New System.Drawing.Size(117, 114)
         '
         'Reset
         '
         Me.Reset.Name = "Reset"
-        Me.Reset.Size = New System.Drawing.Size(152, 22)
+        Me.Reset.Size = New System.Drawing.Size(116, 22)
         Me.Reset.Text = "Reset"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'LoadToolStripMenuItem
         '
         Me.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem"
-        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.LoadToolStripMenuItem.Text = "Load"
-        '
-        'Quit
-        '
-        Me.Quit.Name = "Quit"
-        Me.Quit.Size = New System.Drawing.Size(152, 22)
-        Me.Quit.Text = "Quit"
         '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
-        'Form1
+        'Quit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.Quit.Name = "Quit"
+        Me.Quit.Size = New System.Drawing.Size(116, 22)
+        Me.Quit.Text = "Quit"
+        '
+        'ActionForm
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(118, 99)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.NotifyIconStrip.ResumeLayout(false)
-        Me.ResumeLayout(false)
+        Me.Name = "ActionForm"
+        Me.Text = "ActionForm"
+        Me.NotifyIconStrip.ResumeLayout(False)
+        Me.ResumeLayout(False)
 
-End Sub
+    End Sub
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents NotifyIconStrip As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents Quit As System.Windows.Forms.ToolStripMenuItem

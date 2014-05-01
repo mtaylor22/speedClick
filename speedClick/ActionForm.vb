@@ -9,7 +9,7 @@ Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Collections.Specialized
 
 
-Public Class Form1
+Public Class ActionForm
     <System.Serializable()>
     Public Class dot
         Public type As Integer
@@ -115,7 +115,7 @@ Public Class Form1
         End If
         If nCode >= 0 AndAlso (wParam.ToInt32 = WM_KEYUP OrElse wParam.ToInt32 = WM_SYSKEYUP) Then
             Dim vkCode As Integer = Marshal.ReadInt32(lParam)
-            If current_key.Contains(vkCode) then current_key.Remove(vkCode)
+            If current_key.Contains(vkCode) Then current_key.Remove(vkCode)
             If active Then
                 If activate_key.Contains(vkCode) Then
                     Me.Visible = False
@@ -217,7 +217,7 @@ Public Class Form1
     Private Shared Function DrawCircle(pt As Point, color As Color) As Microsoft.VisualBasic.PowerPacks.OvalShape
         Dim canvas As New Microsoft.VisualBasic.PowerPacks.ShapeContainer
         Dim oval1 As New Microsoft.VisualBasic.PowerPacks.OvalShape
-        canvas.Parent = Form1
+        canvas.Parent = ActionForm
         oval1.BorderColor = color
         oval1.Parent = canvas
         oval1.Left = pt.X - radius
@@ -259,7 +259,7 @@ Public Class Form1
         End If
         Dim fs As FileStream = New FileStream(Directory.GetCurrentDirectory() + "speedClick.bin", FileMode.Open)
         Dim bf As New BinaryFormatter()
-        pvec = CType(bf.Deserialize(fs), Global.System.Collections.Generic.List(Of Global.speedClick.Form1.dot))
+        pvec = CType(bf.Deserialize(fs), Global.System.Collections.Generic.List(Of Global.speedClick.ActionForm.dot))
         fs.Close()
     End Sub
 
