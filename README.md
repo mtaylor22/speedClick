@@ -12,4 +12,5 @@ Whenever the user wishes to move to a point, they can hold the 'activate key' wh
 **Default Hotkeys**
 ==========
 ``Left Ctrl. + R`` : Reset
+
 ``Left Ctrl. + D`` : Activate
