@@ -1,6 +1,6 @@
 **speedClick**
 ==========
-speedClick is a windows utitlity that can be configured to add efficiency and ease to mouse movements. 
+speedClick is a windows utility that can be configured to add efficiency and ease to mouse movements. 
 
 **Instructions**
 ==========
@@ -11,5 +11,5 @@ Whenever the user wishes to move to a point, they can hold the 'activate key' wh
 
 **Default Hotkeys**
 ==========
-Left Ctrl. + R : Reset
-Left Ctrl. + D : Activate
+``Left Ctrl. + R`` : Reset
+``Left Ctrl. + D`` : Activate
