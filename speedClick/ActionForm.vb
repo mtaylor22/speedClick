@@ -82,6 +82,8 @@ Public Class ActionForm
 
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles Me.FormClosing
         UnhookWindowsHookEx(hookID)
+        NotifyIcon1.Visible = False
+        NotifyIcon1.Dispose()
     End Sub
 
     Private Function SetHook(ByVal proc As LowLevelKeyboardProcDelegate) As IntPtr
@@ -158,7 +160,8 @@ Public Class ActionForm
             activate_key = sc_intlist
         Else
             activate_key = New List(Of Integer)()
-            activate_key.Add(Keys.A)
+            activate_key.Add(Keys.D)
+            activate_key.Add(Keys.LControlKey)
         End If
         Dim zc As StringCollection = My.Settings.hotkeyb
         If Not IsNothing(zc) Then
@@ -167,7 +170,8 @@ Public Class ActionForm
             reset_key = sc_intlist
         Else
             reset_key = New List(Of Integer)()
-            reset_key.Add(Keys.Z)
+            reset_key.Add(Keys.R)
+            reset_key.Add(Keys.LControlKey)
         End If
 
 

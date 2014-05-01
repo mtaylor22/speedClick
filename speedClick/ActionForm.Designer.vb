@@ -85,7 +85,7 @@ Partial Class ActionForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(118, 99)
+        Me.ClientSize = New System.Drawing.Size(749, 356)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ActionForm"
         Me.Text = "ActionForm"
