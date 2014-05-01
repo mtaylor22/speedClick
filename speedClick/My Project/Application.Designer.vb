@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.speedClick.Form1
+            Me.MainForm = Global.speedClick.ActionForm
         End Sub
     End Class
 End Namespace
