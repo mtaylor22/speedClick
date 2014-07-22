@@ -280,4 +280,5 @@ Public Class ActionForm
     Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
         SettingsForm.Show()
     End Sub
+
 End Class
